@@ -1,3 +1,6 @@
+### GET ALL
+GET http://localhost:3000/users
+
 ### GET
 GET http://localhost:3000/users/7
 
