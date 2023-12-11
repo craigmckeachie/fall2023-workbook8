@@ -32,6 +32,6 @@ fetch("http://localhost:3000/users", {
   body: JSON.stringify(newUser),
 })
   .then((response) => response.json())
-  .then((users) => {
-    console.log(users);
+  .then((user) => {
+    console.log(user);
   });
