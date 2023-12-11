@@ -11,3 +11,9 @@
 
 4. Choose your favorite tool (Postman or Rest Client) and create a new course.
    http://localhost:3000/courses
+
+
+   ## Exercise 2
+
+   Do a get, post, put and delete to at least 3 different resources available in the API:
+    http://localhost:3000/ 
