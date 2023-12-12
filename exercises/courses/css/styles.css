@@ -10,8 +10,7 @@ header {
 }
 
 main,
-header,
-section {
+header {
   padding-block: 1rem;
   padding-inline: 5rem;
 }
@@ -52,8 +51,18 @@ form {
   gap: 0.5rem;
 }
 
-button {
+button,
+.button {
   background-color: white;
   color: black;
   border: 2px solid black;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  text-decoration: none;
+}
+
+.actions{
+    display: flex;
+    justify-content: flex-start;
+    margin-block: 1rem;
 }

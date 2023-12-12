@@ -8,7 +8,9 @@
   </head>
   <body>
     <header>
-      <a href="list.html">Courses</a>
+      <nav>
+        <a href="list.html" class="active">Courses</a>
+      </nav>
     </header>
     <main>
       <h3>Add Course</h3>
@@ -25,7 +27,9 @@
         <label for="instructorInput">Instructor</label>
         <input type="text" id="instructorInput" />
 
-        <button id="addButton" type="button">Add</button>
+        <section class="actions">
+          <button id="addButton" type="button">Save</button>
+        </section>
       </form>
     </main>
     <script>
@@ -53,7 +57,7 @@
             "Content-Type": "application/json",
           },
           body: JSON.stringify(user),
-        }).then(function () {
+        }).then(function (response) {
           window.location.href = "list.html";
         });
       }
