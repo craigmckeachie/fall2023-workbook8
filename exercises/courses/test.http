@@ -1,1 +1,11 @@
-DELETE http://localhost:3000/courses/21
+POST http://localhost:3000/courses/
+Content-Type:  application/json
+
+{
+    "dept": "CompSci",
+    "courseNum": 101,
+    "courseName": "Intro to React",
+    "instructor": "Craig",
+    "startDate": "April 9",
+    "numDays": 3
+  }

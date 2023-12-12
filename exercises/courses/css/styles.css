@@ -46,7 +46,7 @@ th {
 }
 
 form {
-  max-width: 8rem;
+  max-width: 16rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
