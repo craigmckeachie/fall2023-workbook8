@@ -2,7 +2,7 @@
 GET http://localhost:3000/users
 
 ### GET
-GET http://localhost:3000/users/7
+GET http://localhost:3000/users/14
 
 ### POST
 ### Inserts/Creates one new user
@@ -10,9 +10,9 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "name": "Craig Flayer",
-  "username": "cflayer",
-  "email": "cflayer.biz",
+  "name": "Bryce Jones",
+  "username": "bjones",
+  "email": "bjones.biz",
   "address": {
     "street": "Moxy Trail",
     "suite": "Suite 280",
@@ -24,7 +24,7 @@ Content-Type: application/json
     }
   },
   "phone": "210.067.6132",
-  "website": "flayergroup.io",
+  "website": "jonesinc.io",
   "company": {
     "name": "Flayer Group",
     "catchPhrase": "Configurable multimedia task-force",
@@ -34,12 +34,12 @@ Content-Type: application/json
 
 ###PUT 
 ### Updates one user
-PUT http://localhost:3000/users/5
+PUT http://localhost:3000/users/14
 Content-Type: application/json
 
 {
-  "name": "Craig Flayer",
-  "username": "cflayer",
+  "name": "James Earl Jones",
+  "username": "jjones",
   "email": "cflayer.biz",
   "address": {
     "street": "Moxy Trail",
@@ -62,4 +62,4 @@ Content-Type: application/json
 
 ### DELETE
 ### DELETES one user
-DELETE http://localhost:3000/users/7
+DELETE http://localhost:3000/users/14
