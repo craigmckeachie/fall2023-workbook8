@@ -13,14 +13,18 @@
       </nav>
     </header>
     <main>
-      <section class="">
+      <div class="link-bar">
         <a class="" href="add.html">Add Course</a>
-      </section>
+      </div>
       <table>
         <thead>
           <tr>
+            <td>Course Number</td>
             <td>Course Name</td>
             <td>Department</td>
+            <td>Instructor</td>
+            <td>Start Date</td>
+            <td>Length</td>
           </tr>
         </thead>
         <tbody id="coursesTableBody"></tbody>
@@ -51,10 +55,22 @@
         let row = coursesTableBody.insertRow();
 
         let td1 = row.insertCell();
-        td1.innerText = course.courseName;
+        td1.innerText = course.courseNum;
 
         let td2 = row.insertCell();
-        td2.innerText = course.dept;
+        td2.innerText = course.courseName;
+
+        let td3 = row.insertCell();
+        td3.innerText = course.dept;
+
+        let td4 = row.insertCell();
+        td4.innerText = course.instructor;
+
+        let td5 = row.insertCell();
+        td5.innerText = course.startDate;
+
+        let td6 = row.insertCell();
+        td6.innerText = course.numDays;
       }
 
       //wire-up
