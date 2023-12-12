@@ -43,6 +43,9 @@ td,
 th {
   padding: 0.6rem;
 }
+thead{
+  font-weight: 600;
+}
 
 form {
   max-width: 16rem;
