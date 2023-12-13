@@ -39,6 +39,10 @@ tr {
   border-bottom: 1px solid #ddd;
 }
 
+tr:nth-child(even) {
+      background-color: #f5f8fc;
+    }
+
 td,
 th {
   padding: 0.6rem;
