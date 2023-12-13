@@ -40,14 +40,14 @@ tr {
 }
 
 tr:nth-child(even) {
-      background-color: #f5f8fc;
-    }
+  background-color: #f5f8fc;
+}
 
 td,
 th {
   padding: 0.6rem;
 }
-thead{
+thead {
   font-weight: 600;
 }
 
@@ -58,12 +58,13 @@ form {
   gap: 0.5rem;
 }
 
-input, select, option{
-  height: 1.5rem;
-  color:black;
+input, select {
+  padding: 8px;
+  color: black;
   background-color: #f5f8fc;
   border: 1px solid black;
 }
+
 
 button,
 .button {
@@ -75,17 +76,16 @@ button,
   text-decoration: none;
 }
 
-.actions{
-    display: flex;
-    justify-content: flex-start;
-    margin-block: 1rem;
-    gap: 1rem;
-    align-items: baseline;
+.actions {
+  display: flex;
+  justify-content: flex-start;
+  margin-block: 1rem;
+  gap: 1rem;
+  align-items: baseline;
 }
 
 .link-bar {
   display: flex;
   justify-content: flex-end;
   margin-block: 1rem;
-
 }
