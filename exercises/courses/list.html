@@ -25,6 +25,8 @@
             <td>Instructor</td>
             <td>Start Date</td>
             <td>Length</td>
+            <td></td>
+            <td></td>
           </tr>
         </thead>
         <tbody id="coursesTableBody"></tbody>
@@ -71,6 +73,21 @@
 
         let td6 = row.insertCell();
         td6.innerText = course.numDays;
+
+        let td7 = row.insertCell();
+        td7.innerText = course.numDays;
+
+        let td8 = row.insertCell();
+        let a1 = document.createElement("a");
+        a1.innerText = "edit";
+        a1.href = "edit.html";
+        td8.appendChild(a1);
+
+        let td9 = row.insertCell();
+        let a2 = document.createElement("a");
+        a2.innerText = "delete";
+        a2.href = "delete.html";
+        td9.appendChild(a2);
       }
 
       //wire-up
