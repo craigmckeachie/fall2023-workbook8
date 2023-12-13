@@ -35,7 +35,7 @@
       const coursesTableBody = document.querySelector("#coursesTableBody");
 
       //functions
-      function loadsCourses() {
+      function loadCourses() {
         fetch("http://localhost:3000/courses")
           .then(function parseBody(response) {
             return response.json();
@@ -75,7 +75,7 @@
 
       //wire-up
       window.onload = function initialize() {
-        loadsCourses();
+        loadCourses();
       };
     </script>
   </body>
