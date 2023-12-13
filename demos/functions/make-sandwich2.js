@@ -1,9 +1,9 @@
-const condiment1 = "mayo";
-const topping1 = "tomato";
-const condiment2 = "butter";
-const bread = "white bread";
-const meat = "turkey";
-const topping2 = "lettuce";
+const c1 = "mayo";
+const t1 = "tomato";
+const c2 = "butter";
+const b = "white bread";
+const m = "turkey";
+const t2 = "lettuce";
 
 function makeSandwich(bread, condiment1, condiment2, meat, topping1, topping2) {
   let sandwich = "no sandwhich";
@@ -12,5 +12,5 @@ function makeSandwich(bread, condiment1, condiment2, meat, topping1, topping2) {
 }
 
 
-let finishedSandwich = makeSandwich();
+let finishedSandwich = makeSandwich(b,c1,c2,m,t1,t2);
 console.log(finishedSandwich);
