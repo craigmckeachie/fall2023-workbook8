@@ -54,6 +54,13 @@ form {
   gap: 0.5rem;
 }
 
+input, select, option{
+  height: 1.5rem;
+  color:black;
+  background-color: #f5f8fc;
+  border: 1px solid black;
+}
+
 button,
 .button {
   background-color: white;
