@@ -12,5 +12,9 @@ function makeSandwich(bread, condiment1, condiment2, meat, topping1, topping2) {
 }
 
 
-let finishedSandwich = makeSandwich(b,c1,c2,m,t1,t2);
+// let finishedSandwich = makeSandwich("white bread",c1,c2,m,t1,t2);
+// let bread = "white bread"
+// let finishedSandwich = makeSandwich(bread, c1, c2, m, t1, t2);
+// const b = "white bread";
+let finishedSandwich = makeSandwich(b, c1, c2, m, t1, t2);
 console.log(finishedSandwich);
