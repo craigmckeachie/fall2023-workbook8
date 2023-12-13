@@ -1,4 +1,4 @@
-# Exercises
+<!-- # Exercises
 
 ## Exercise 1
 
@@ -46,4 +46,4 @@
 
 1.
 
-### Edit User
+### Edit User -->
