@@ -13,7 +13,7 @@
       </nav>
     </header>
     <main>
-      <div id="messageDiv"></div>
+      <div id="messageDiv" style="display: none">test this out</div>
       <div class="link-bar">
         <a class="" href="add.html">Add Course</a>
       </div>
@@ -89,17 +89,22 @@
         td9.appendChild(a2);
       }
 
-      //wire-up
-      window.onload = function initialize() {
+      function showMessage() {
         let message = sessionStorage.getItem("message");
         if (message) {
           messageDiv.innerText = message;
+          messageDiv.style.display = "block";
         }
         setTimeout(function () {
           messageDiv.innerText = "";
+          messageDiv.style.display = "none";
           sessionStorage.removeItem("message");
         }, 4000);
+      }
 
+      //wire-up
+      window.onload = function initialize() {
+        showMessage();
         loadCourses();
       };
     </script>
