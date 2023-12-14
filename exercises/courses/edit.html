@@ -102,6 +102,7 @@
           },
           body: JSON.stringify(course),
         }).then(function (response) {
+          sessionStorage.setItem("message", "Successfully saved.")
           window.location.href = "list.html";
         });
       }
