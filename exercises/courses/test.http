@@ -1,17 +1,17 @@
-  ### Delete
-  DELETE http://localhost:3000/courses/17
+  ### GET
+  GET http://localhost:3000/courses/17
 
 ### INSERT
-POST http://localhost:3000/courses/
+PUT http://localhost:3000/courses/17
 Content-Type:  application/json
 
 {
-    "dept": "CompSci",
-    "courseNum": 101,
-    "courseName": "Intro to React",
-    "instructor": "Craig",
-    "startDate": "April 9",
-    "numDays": 3
-  }
+  "dept": "CompSci",
+  "courseNum": "203",
+  "courseName": "Basket Weaving",
+  "instructor": "Grant",
+  "startDate": "Aug 12",
+  "numDays": "3"
+}
 
 
