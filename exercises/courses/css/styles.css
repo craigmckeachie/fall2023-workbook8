@@ -58,13 +58,13 @@ form {
   gap: 0.5rem;
 }
 
-input, select {
+input,
+select {
   padding: 8px;
   color: black;
   background-color: #f5f8fc;
   border: 1px solid black;
 }
-
 
 button,
 .button {
@@ -90,10 +90,54 @@ button,
   margin-block: 1rem;
 }
 
-#messageDiv{
-      background-color: #fbdde2b4;
-    padding-block: 0.8rem;
-    padding-inline: 1.2rem;
-    width: fit-content;
-    border: 1px solid black;
+#messageDiv {
+  background-color: #fbdde2b4;
+  padding-block: 0.8rem;
+  padding-inline: 1.2rem;
+  width: fit-content;
+  border: 1px solid black;
+}
+
+.fade-in {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.fade-out {
+  -webkit-animation: fade-out 1s ease-out both;
+  animation: fade-out 1s ease-out both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
