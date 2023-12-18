@@ -9,10 +9,20 @@
     <nav>
       <a href="page1.html">Page 1</a>
       <a href="page2.html">Page 2</a>
+      <button id="clearButton">Clear</button>
     </nav>
     <h1>Page 1</h1>
     <script>
+      const clearButton = document.querySelector("#clearButton");
+
       localStorage.setItem("page1", "Message from page 1.");
+
+      function clearStorage() {
+        localStorage.removeItem("page1");
+        localStorage.clear();
+      }
+
+      clearButton.onclick = clearStorage;
     </script>
   </body>
 </html>
